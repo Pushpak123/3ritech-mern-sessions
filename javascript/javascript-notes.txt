@@ -1,0 +1,57 @@
+- what is javascript?
+    - javascript is an open source client side scripting language
+    - it is used: 
+        creating / making your web pages more interactivity
+        - loading the data dynamically
+        - events (click, hover)
+
+- how to use javascript in html
+- displaying the value / data
+    - document.write();
+    - console.log(); / console.warn(); / console.error();
+    - alert(); / confirm(); / prompt();
+
+- comment: 
+    - single line: // 
+    - multi line: /* */
+
+- data type:
+    1. primitive data types
+        1. number: 0 - 9; 23, -87, 67.46, 3e4, 7^3
+        2. string: a - a; A - Z; 0 - 9; all symbols; '...' / "..." / `...`
+        3. boolean: true / false
+
+    2. abstract / non primitive data type
+        1. array
+        2. function
+        3. class & object
+
+    3. misc data type
+        1. null
+        2. undefined
+
+- identifiers: 
+    - the name itself is a point of identifying the concept
+    - rules in writing or declaring the identifiers:
+        1. starting character should be either a - z / A - Z / _
+        2. from second character it can be either a - z / A - Z / _ / 0 - 9
+        3. no spaces are allowed
+        4. no special symbols are allowed except _
+        5. can be a combination of lowercase and uppercase
+
+    ex., hello, _age, num1, 1gum (x), fullName, full_name
+
+- keywords:
+    - a keyword can also called as pre defined / reserved word
+    - list of keywords: if,  else, while, try, async, let etc., 
+
+- declaring the variable:
+    - there are 3 different ways in declaring the variable
+    - var, let and const
+
+- operators:
+    1. arithmatic 
+    2. assignment 
+    3. comparison (relational)
+    4. conditional (ternary)
+    5. logical

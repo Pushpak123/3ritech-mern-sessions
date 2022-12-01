@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css">
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+        // anonymous function
+        let checkLogin = function(u, p) {
+            console.log(p);
+            if(u !== "" && p !== "" && u !== undefined && p !== undefined) {
+                return("success");
+            } else {
+                return("failed");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <script>
+            let username = "john";
+            let password = "dummy";
+
+            let getRes = "";
+
+            getRes = checkLogin(username, password);
+            document.write(`userLogin: ${getRes} <br />`);
+
+            getRes = checkLogin(username);
+            document.write(`userLogin: ${getRes} <br />`);
+
+        </script>
+    </div>
+</body>
+</html>

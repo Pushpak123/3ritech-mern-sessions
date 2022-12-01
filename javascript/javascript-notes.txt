@@ -55,3 +55,27 @@
     3. comparison (relational)
     4. conditional (ternary)
     5. logical
+
+- statements: 
+    1. decision making statements: if, if else, nested if else, switch case
+    2. loop statements: while, for, do while
+
+- arrays: 
+    - an array is a set of different data type items or elements under one variable
+
+- functions: 
+    - a function is a reusable set of statements
+    - function call and its definition
+    - passing parameters
+    - default arguments
+    - return statement
+    - anonymous
+    - arrow
+    - callback
+
+- node
+- dom selector
+- css selector 
+- styling to selector
+- get and set attributes
+- dom manipulation

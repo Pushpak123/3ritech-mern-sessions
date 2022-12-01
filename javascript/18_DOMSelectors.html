@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css">
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+        // document.write(`from HEAD: ${document.head} <br />`);
+        // document.write(`from HEAD: ${document.body} <br />`);
+    </script>
+</head>
+<body>
+    
+    <p id="mark">this is para with id = mark</p>
+    <p>this is another para</p>
+
+    <p class="test">this is para with class = test</p>
+    <p class="test block">this is para with class = test and block</p>
+
+    <ul id="one">
+        <li>Home</li>
+        <li class="tick">About</li>
+        <li>Contact</li>
+    </ul>
+
+    <ul id="mark">
+        <li>Home</li>
+        <li class="tick">About</li>
+        <li>Contact</li>
+    </ul>
+    
+    <script>
+        // document.write(`from BODY: ${document.head} <br />`);
+        // document.write(`from BODY: ${document.body} <br />`);
+
+        document.write(document.documentElement.getAttribute('lang') + "<br />");
+        document.body.style.backgroundColor = "#f9f9f9";
+        document.write(document.head.firstElementChild.nodeName + "<br />");
+
+        /*var match = document.getElementById("mark");
+        document.write("the selected element " + match + "<br />");
+        match.style.backgroundColor = "#000";
+        match.style.color = "#fff";*/
+
+        /*var matches = document.getElementsByClassName("test");
+        document.write("no of selected elements: " + matches.length + "<br />");
+
+        for(var elem in matches) {
+            matches[elem].style.backgroundColor = "grey";
+        }*/
+
+        /*var matches = document.getElementsByTagName("p");
+        document.write("no of selected elements: " + matches.length + "<br />");
+
+        for(var elem in matches) {
+            matches[elem].style.backgroundColor = "grey";
+        }*/
+
+        var matches = document.querySelectorAll("li");
+        document.write("no of selected elements: " + matches.length + "<br />");
+
+        var matches = document.querySelectorAll("ul#one li.tick");
+        document.write("no of selected elements: " + matches.length + "<br />");
+    </script>
+</body>
+</html>

@@ -27,13 +27,48 @@
 
             // 2. unary: ++, --
             document.write(`the value of num1 before ++: ${num1} <br />`);
-            num1++;
+            num1++; // num1 = (num1 + 1)
             document.write(`the value of num1 after ++: ${num1} <br />`);
 
-            //2. assignment 
-            //3. comparison (relational)
-            //4. conditional (ternary)
-            //5. logical
+            //2. assignment: +=, -=, *=, /=, %=
+            document.write(`the value of num1 before +=: ${num1} <br />`);
+            num1 += num2; // num1 = (num1 + num2)
+            document.write(`the value of num1 after +=: ${num1} <br />`);
+
+            let x = 4;
+            let y = "4";
+            let z = 4.0;
+
+            //3. comparison (relational): ==, !=, ===, !==, <, >, <=, >=
+            document.write(`the value of x: ${x}, and its datatype is: ${typeof x} <br />`);
+            document.write(`the value of y: ${y}, and its datatype is: ${typeof y} <br />`);
+            document.write(`the value of z: ${z}, and its datatype is: ${typeof z} <br />`);
+
+            res = (x == y);
+            document.write(`the value of res: ${res} <br />`);
+
+            res = (x !== y);
+            document.write(`the value of res: ${res} <br />`);
+
+            //4. conditional (ternary): () ? ... : ...;
+            res = ((x >= z) ? (`x is 
+            greater than z`) : (`z is 
+            greater than x`));
+            document.write(`the value of res: ${res} <br />`);
+
+            //5. logical: &&, ||, !
+            res = ((x !== z) && (z >= y));
+            document.write(`the value of res with &&: ${res} <br />`);
+
+            res = ((x !== z) || (z >= y));
+            document.write(`the value of res with ||: ${res} <br />`);
+
+            res = !((x !== z) && (z >= y));
+            document.write(`the value of res with && and !: ${res} <br />`);
+
+            res = !((x !== z) || (z >= y));
+            document.write(`the value of res with || and !: ${res} <br />`);
+
         </script>
     </div>
 </body>

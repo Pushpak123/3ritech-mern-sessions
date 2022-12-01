@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css">
+    <style>
+        #intro {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+
+    <script src="customScripts.js"></script>
+    <script></script>
+</head>
+<body>
+    <p id="intro" style="color: red; font-size: 20px;">this is para</p>
+    <p>this is another para</p>
+
+    <div id="info" class="disabled">something saying in this...</div>
+
+    <script>
+        var elem = document.getElementById("intro");
+
+        // elem.style.color = "blue";
+        elem.style.fontSize = "18px";
+        elem.style.fontWeight = "bold";
+
+        document.write("style1: " + elem.style.color + "<br />");
+
+        var styles = window.getComputedStyle(elem);
+        document.write("color: " + styles.getPropertyValue("color") + "<br />");
+
+        var elem = document.getElementById("info");
+
+        elem.className = "note";
+        elem.className += " highlight";
+        elem.className = "";
+
+        elem.classList.add("hide");
+        elem.classList.remove("highlight");
+
+        elem.classList.toggle("note");
+
+        if(elem.classList.contains("noted")) {
+            document.write("yes, its having class noted <br />");
+        }
+    </script>
+</body>
+</html>

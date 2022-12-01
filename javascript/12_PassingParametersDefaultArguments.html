@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css">
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+        // function definition
+        function doCalc(n1 = 1, n2 = 2) {
+            // local variable
+            let res = 0;
+            res = (n1 / n2);
+            document.write(`the res: ${res} <br />`);
+        }
+
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <script>
+            // declaring global variable
+            let num1 = 4.7;
+            let num2 = 9.3;
+
+            doCalc(num1, num2);
+
+            num1 = 3.9;
+            num2 = 4.5;
+
+            doCalc(num1, num2);
+            
+            doCalc(num1);
+            doCalc();
+        </script>
+    </div>
+</body>
+</html>

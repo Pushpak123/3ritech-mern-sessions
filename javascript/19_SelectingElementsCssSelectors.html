@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css">
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script></script>
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li class="tick">About Us</li>
+        <li>Contact Us</li>
+        <li class="tick">My Account</li>
+    </ul>
+
+    <script>
+        var matches = document.querySelectorAll("ul li.tick");
+        document.write("no of selected elements: " + matches.length + "<br />");
+
+        for(var elem of matches) {
+            document.write(elem.innerHTML + "<br />");
+        }
+
+        matches[1].style.textDecoration = "line-through";
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css">
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script></script>
+</head>
+<body>
+    <div class="wrapper">
+        <script>
+            // if, if else, nested if else, switch case
+            let num1 = 0;
+
+            if(num1) {
+                document.write(`the value of num1: ${num1} is a valid value <br />`);
+            } else {
+                document.write(`the value of num1: ${num1} is a invalid value <br />`);
+            }
+
+            if(num1 == 0) {
+                document.write(`the value of num1: ${num1} is equalent to 0 <br />`);
+            } else {
+                document.write(`the value of num1: ${num1} is not equalent to 0 <br />`);
+            }
+
+            let age = 28;
+            if(age < 18) {
+                document.write(`the value of age: ${age} is less than 18 <br />`);
+            } else if(age >= 18 && age < 26) {
+                document.write(`the value of age: ${age} is in between the 18 and 26 <br />`);
+            } else if(age >= 26 && age < 35) {
+                document.write(`the value of age: ${age} is in between the 26 and 35 <br />`);
+            } else {
+                document.write(`the value of age: ${age} is greater than 35 <br />`);
+            }
+
+            let username = 'john';
+            switch(username) {
+                case 'peter': 
+                    document.write(`the username: ${username} loggedin successfully <br />`);
+                    break;
+
+                case 'john': 
+                    document.write(`the username: ${username} loggedin successfully <br />`);
+                    break;
+
+                case 'david': 
+                    document.write(`the username: ${username} loggedin successfully <br />`);
+                    break;
+
+                case 'smith': 
+                    document.write(`the username: ${username} loggedin successfully <br />`);
+                    break;
+
+                default:
+                    document.write(`none of the case is matched with given username <br />`);
+            }
+
+        </script>
+    </div>
+</body>
+</html>

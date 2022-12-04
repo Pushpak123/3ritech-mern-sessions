@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css">
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script></script>
+</head>
+<body>
+    <div id="main">
+        <h1 id="title"><span><strong>heading</strong></span></h1>
+        
+        <hr />
+
+        <p id="hint"><span>para one</span></p>
+        <p id="hint2"><strong>para two</strong></p>
+    </div>
+
+    <script>
+        var main = document.getElementById("main");
+        document.write(`${main.firstChild.nodeName} <br />`);
+        console.log(main.firstChild.nodeName);
+
+        var hint = document.getElementById("hint");
+        console.log(hint.firstChild.nodeName);
+
+        var hint2 = document.getElementById("hint2");
+        console.log(hint2.firstChild.nodeName);
+
+
+        main.firstElementChild.style.color = "red";
+        hint.firstElementChild.style.color = "blue";
+
+
+        if(main.hasChildNodes()) {
+            var nodes = main.childNodes;
+            var len = nodes.length;
+
+            document.write(`no of nodes: ${len} <br />`);
+
+            for(var i = 0; i < nodes.length; i++) {
+                document.write(`nodes[${i}] => ${nodes[i].nodeName} <br />`);
+            }
+        }
+
+    </script>
+</body>
+</html>

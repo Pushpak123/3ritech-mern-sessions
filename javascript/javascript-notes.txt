@@ -79,3 +79,12 @@
 - styling to selector
 - get and set attributes
 - dom manipulation
+- get and set html contents
+- replacing elements
+- dom navigation
+- window object
+- screen object 
+- location object 
+- loading contents
+
+- timers

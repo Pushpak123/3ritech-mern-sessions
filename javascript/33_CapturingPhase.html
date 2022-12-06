@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css">
+    <style>
+        div, p, a {
+            padding: 15px 30px;
+            display: block;
+            border: 1px solid #000;
+            background-color: #fff;
+        }
+    </style>
+
+    <script src="customScripts.js"></script>
+    <script></script>
+</head>
+<body>
+    <div id="p1">
+        <p id="c1">I am child para</p>
+    </div>
+
+    <script>
+        var parent = document.querySelector("#p1");
+        parent.addEventListener("click", function() {
+            console.log("parent is invoked");
+        }, true);
+        
+        var child = document.querySelector("#c1");
+        child.addEventListener("click", function() {
+            console.log("child is invoked");
+        });
+
+    </script>
+</body>
+</html>

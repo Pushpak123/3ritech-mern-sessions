@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css">
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+        function firstFunc() {
+            document.write(`the firstFunc is executed <br />`);
+        }
+
+        function secondFunc() {
+            document.write(`the secondFunc is executed <br />`);
+        }
+
+        function sayHello() {
+            document.write(`saying Hello! <br />`);
+        }
+
+        function setHoverColor() {
+            btn.style.color = "#0f0";
+        }
+
+        function setNormalColor() {
+            btn.style.color = "#f00";
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <button type="button" id="myBtn"> click btn </button>
+        <script>
+            var btn = document.getElementById("myBtn");
+            // btn.onclick = firstFunc;
+            // btn.onmouseover = secondFunc;
+
+            btn.addEventListener("click", sayHello);
+            btn.addEventListener("mouseover", setHoverColor);
+            btn.addEventListener("mouseout", setNormalColor);
+        </script>
+    </div>
+</body>
+</html>

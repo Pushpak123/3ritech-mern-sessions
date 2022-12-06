@@ -88,3 +88,16 @@
 - loading contents
 
 - timers
+- date and time
+- math 
+- type conversion
+- event listeners
+- event propagation
+    - event capturing
+    - event target
+    - event bubbling
+
+- hoisting
+- nested function & closures
+- get and set methods
+- strict mode

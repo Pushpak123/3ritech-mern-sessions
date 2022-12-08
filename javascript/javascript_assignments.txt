@@ -1,0 +1,203 @@
+Javascript Assignments
+-------------------------------------------------------------------------------
+Find the position a substring within a string
+Find the position of last occurrence of a substring within a string
+Find the position of a substring within a string from specific index
+Search text or pattern inside a string
+Slice out a portion of a string
+Slice strings using negative indexes
+Extract substring from a string
+Extract fixed number of characters from a string
+Replace part of string with another string
+Find and replace text in a string case insensitively
+Replace all occurrences of a substring in a string
+Join two or more strings
+Extract a single character from a string
+Extract a single character from a string using square brackets
+Split a string into an array
+Split a string into an array of characters
+Automatic conversion of numeric strings to numbers
+Performing mathematical operation on non numeric values
+Fixing roundoff error
+Precision problem with integers
+Parse integers from strings
+Parse floating point numbers from strings
+Convert numbers to strings
+Format a number in exponential notation
+Format numbers to fixed decimal places
+Format numbers with precision
+Largest and smallest possible pumbers
+Combine multiple cases in a switch case statement
+Typical conditional statement
+Add a new element at the end of an array
+Add a new element at the beginning of an array
+Add multiple elements to an array at once
+Remove the last element from an array
+Remove the first element from an array
+Add or remove array elements at any index
+Join all elements of an array into a string
+Convert an array into a comma separated string
+Extract out a portion of an array
+Extract all elements from an array beyond specific index
+Merge two arrays together into a single array
+Merge multiple arrays into a single array
+Search an array for a specific value
+Search an array for a specific value beyond certain index
+Find whether an array includes a certain value
+Search an array based on certain condition
+Search an array based on certain condition and find index
+Filter an array in JavaScript
+JavaScript Sorting Arrays
+Sort an array alphabetically in JavaScript
+Reverse the order of an array
+Sort a numeric array in JavaScript
+Sort a numeric array correctly using compare function
+Find the maximum and minimum value in an array
+Sort an array of objects
+Iterate over an array using for loop
+JavaScript for...in loop
+Iterate over an array using for in loop
+Define and call a function in JavaScript
+Add parameters to a function
+Pass arguments to a function
+Return a value from a function
+Return multiple values from a function
+JavaScript function expression
+Assign a function to a variable
+JavaScript function declaration vs function expression
+JavaScript local variable
+JavaScript global variable
+JavaScript Objects
+Creating objects in JavaScript
+Quoting property names of an object
+Get properties values of an object
+Access properties of an object using bracket notation
+Dynamically access object properties using variables
+Loop through an object in JavaScript
+Set the properties of an object
+Remove properties from an object
+Call the methods of an object
+JavaScript copy by value
+JavaScript copy by reference
+JavaScript DOM Selectors
+Select HTML head and body elements
+Access body element from different location
+Select an element by its id attribute
+Select elements by class name
+Select elements by tag name
+Select elements with css selectors
+JavaScript DOM Styling
+Add inline styles to an element
+Get style information from an element
+Get computed style information from an element
+Add or replace css classes on an element
+Add or remove css classes on an element using classlist
+JavaScript DOM Get Set Attributes
+Get the value of an attribute
+Set an attribute on an element
+Remove an attribute from an element
+Change the value of an attribute
+JavaScript DOM Manipulation
+Insert new element into the DOM
+Insert new element at the beginning
+Get set inner HTML of an element
+Insert HTML without replacing the existing content
+Remove an element from the DOM
+Remove child element without knowing its parent
+Replace an element with another element in the DOM
+JavaScript DOM Navigation
+Get first and last child nodes
+Get only element child nodes
+Get all child nodes
+Get all element child nodes
+Get parent node
+Get only parent element node
+Get previous and next node
+Get previous and next sibling element
+Get color depth of the screen
+Get pixel depth of the screen
+JavaScript Window Location
+Get the current url
+Get the different parts of a url
+Load another resource from a url
+Replace current url with a new url
+Load new document in the window
+Reload a page dynamically
+Execute a function after some time
+Execute a function at regular intervals
+Cancel a timer with cleartimeout
+Cancel a timer with clearinterval
+Create a date object in JavaScript
+Passing parameters to the date object
+Construct a date object by passing a date string
+Define a date object by passing the number of milliseconds
+Get the current date and time in JavaScript
+Generate date strings in JavaScript
+Generate time strings in JavaScript
+Get year month and day from a date object
+Get hours minutes and seconds from a date object
+Set the year value of a date object
+Set the month value of a date object
+Specify the month value outside of the range
+Set the date value of a date object
+Specify the date value outside of the range
+Set the hours minutes and seconds values of a date object
+Get the absolute value of a number
+Find the largest and smallest numbers in a set
+Find the maximum and minimum values in an array
+Pass an array to max and min methods using spread operator
+Raise a number to a certain power
+Perform trigonometric operations in JavaScript
+Automatic data type conversions
+Convert a numeric string to number
+Convert values to numbers
+Convert a boolean value to string
+Convert values to strings
+Convert a number to string
+Convert values to boolean
+Automatic object to primitive data type conversions
+Convert objects to primitive data types manually
+Perform data type conversions using operators
+Assigning multiple event handlers on a single event
+Assigning multiple event listeners on a single event
+Attaching different event listeners to different event types
+Adding event listener to the window resize event
+Removing an event listener
+JavaScript Event Propagation
+Event capturing mechanism
+Event bubbling mechanism
+Get the event target
+Event propagation in JavaScript
+Stop event propagation
+Stop immediate propagation of an event
+Prevent default actions with JavaScript
+JavaScript Borrowing Methods
+Call methods from other object
+Apply methods of another object
+Apply built in methods
+Using spread operator instead of apply method
+Find max or min value in an array using reduce method
+Function hoisting in JavaScript
+Using a variable before it is declared
+Using a variable before it is initialized
+Variable hoisting in JavaScript
+Enable strict mode in JavaScript
+Enable strict mode inside the function
+Cannot assign to undeclared variable in strict mode
+Cannot delete a variable in strict mode
+Cannot delete a function in strict mode
+Duplicate parameter name not allowed in strict mode
+Eval cannot alter scope in strict mode
+Eval and arguments cannot be used as identifier in strict mode
+Strict mode code may not contain with statements
+Cannot assign to read only property of object in strict mode
+Cannot add property to a non extensible object in strict mode
+Octal literals are not allowed in strict mode
+JSON object data structure
+JSON array data structure
+Convert JSON string to JavaScript object and access individual values
+Parse nested JSON data in JavaScript
+Convert JavaScript object to JSON string
+Convert JavaScript array to JSON string
+The this keyword value inside a simple function
+The this keyword value inside an arrow function

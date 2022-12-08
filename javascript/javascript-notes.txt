@@ -101,3 +101,19 @@
 - nested function & closures
 - get and set methods
 - strict mode
+- json
+- exception / error handling - try, catch, throw, finally
+
+- regular expressions
+    username - a - z, 0 - 9, _
+    
+
+- form validation
+
+- object, class
+- promise, async, and await
+
+- localstorage
+- sessionstorage
+
+

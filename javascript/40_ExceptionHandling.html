@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css">
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+
+        function doAction() {
+            var num = prompt("enter any number in between 0 to 10");
+            var start = Date.now();
+
+            try {
+            if(num > 0 && num <= 10) {
+                console.log(`pow: ${Math.pow(num, num)}`);
+                } else {
+                    throw new Error("an invalid value!!");
+                }
+            } catch(err) {
+                console.error(err);
+            } finally {
+                console.log(`exec took: ${(Date.now() - start)} ms`);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <button type="button" onclick="doAction()"> action </button>
+        <script>
+
+        </script>
+    </div>
+</body>
+</html>

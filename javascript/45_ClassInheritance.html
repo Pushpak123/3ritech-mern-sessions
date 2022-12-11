@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css">
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+        class Person {
+            constructor(pId, pName) {
+                this.pId = pId;
+                this.pName = pName;
+            }
+
+            
+        }
+
+        class Employee extends Person {
+            constructor(pId, pName, empCode, empDesg, empSal) {
+                super(pId, pName);
+                this.empCode = empCode;
+                this.empDesg = empDesg;
+                this.empSal = empSal;
+            }
+
+            getDetails() {
+                console.log(`the person details - id: ${this.pId}, and name: ${this.pName}, the employee details: ${this.empCode}, desg: ${this.empDesg} and ${this.empSal}`);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <script>
+            let emp1 = new Employee(135, "john", "emp664", "sr., developer", "2lakhs");
+            emp1.getDetails();
+
+            let emp2 = new Employee(874, "paul", "emp358", "hr", "1lakhs");
+            emp2.getDetails();
+
+        </script>
+    </div>
+</body>
+</html>

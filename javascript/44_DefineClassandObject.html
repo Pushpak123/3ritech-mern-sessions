@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css">
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+        class User {
+            constructor(id, name) {
+                this.id = id;
+                this.name = name;
+            }
+
+            getDetails() {
+                console.log(`id: ${this.id}, and name: ${this.name}`);
+            }
+
+            setDetails(id, name) {
+                this.id = id;
+                this.name = name;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <script>
+            let user1 = new User(14, "john");
+            user1.getDetails();
+            user1.setDetails(87, "qwrty");
+            user1.getDetails();
+
+            let user2 = new User(35, "paul");
+            user2.getDetails();
+        </script>
+    </div>
+</body>
+</html>

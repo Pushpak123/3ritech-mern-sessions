@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css">
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+        function Person(firstname, lastname) {
+            this.firstname = firstname;
+            this.lastname = lastname;
+        }
+
+        getDetails = () => {
+            console.log(this.firstname);
+            console.log(this.lastname);
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <script>
+            let p1 = new Person("john", "paul");
+            console.log(p1);
+            console.log(p1.firstname);
+            console.log(p1.lastname);
+            p1.getDetails();
+
+            let p2 = new Person("adam", "james");
+            console.log(p2);
+            console.log(p2.firstname);
+            console.log(p2.lastname);
+            p2.getDetails();
+
+        </script>
+    </div>
+</body>
+</html>

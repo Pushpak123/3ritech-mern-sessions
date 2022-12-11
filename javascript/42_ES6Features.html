@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css">
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script></script>
+</head>
+<body>
+    <div class="wrapper">
+        <script>
+            // let, const
+            for(let i = 0; i < 5; i++) {
+                console.log(i);
+            }
+
+            const PI = 3.14;
+            console.log(PI);
+
+            const Person = {name: "john", age: 25};
+            console.log(Person);
+            console.log(Person.name);
+            console.log(Person.age);
+
+            Person.age = 43;
+            console.log(Person.age);
+
+            const Colors = ["red", "pink", "green", "yellow"];
+            console.log(Colors);
+
+            Colors[2] = "blue";
+            console.log(Colors);
+
+            // templating
+            console.log(`the name: ${Person.name} and age: ${Person.age}`)
+
+            // default arguments
+            // arrow functions
+
+            let productList = {
+                productId: 445154, 
+                productName: "Laptop", 
+                productPrice: "$450.00"
+            };
+
+            console.log(productList);
+            
+            let personDetails = [3426364, "John", "john@gmail.com", "+(876) 567 3456"]
+            console.log(personDetails);
+
+            for(let item of personDetails) {
+                console.log(item);
+            }
+
+            for(let item in personDetails) {
+                console.log(personDetails[item]);
+            }
+        </script>
+    </div>
+</body>
+</html>

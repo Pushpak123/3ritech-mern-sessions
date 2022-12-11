@@ -110,9 +110,14 @@
 
 - form validation
 
+- es6 features
 - object, class
-- promise, async, and await
 
+- spread operators
+- rest parameters
+- destructing
+
+- promise, async, and await
 - localstorage
 - sessionstorage
 

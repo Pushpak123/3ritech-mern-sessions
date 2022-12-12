@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css">
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+        function myDisplay(someVal) {
+            alert(someVal);
+        }
+
+        let myFunc = new Promise(function(resolve, reject) {
+            let x = 10;
+            if(x == 0) {
+                resolve("yes, its correct");
+            } else {
+                reject("no, its not correct");
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <script>
+            myFunc
+                .then(
+                    function(res) {
+                        myDisplay(res);
+                    }, 
+                    function(rej) {
+                        myDisplay(rej);
+                    }
+                )
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <link rel="stylesheet" href="customStyles.css">
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+
+        function store() {
+            var firstName = document.getElementById("firstName").value;
+            var user = {
+                firstName: firstName
+            };
+            window.sessionStorage.setItem("user", JSON.stringify(user));
+            
+        }
+
+        function retriveData() {
+            var data = window.sessionStorage.getItem("user");
+            document.getElementById("getData").innerHTML = data;
+        }
+
+        function removeData() {
+            window.sessionStorage.removeItem("user");
+        }
+
+        window.onload = function() {
+            document.getElementById("myFrm").onsubmit = store;
+            document.getElementById("retriveData").onclick = retriveData;
+            document.getElementById("removeData").onclick = removeData;
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <form id="myFrm">
+            <h4>Enter Details</h4>
+
+            <input type="text" id="firstName" required autofocus placeholder=" ex., first name" />
+
+            <button type="submit"> submit </button>
+        </form>
+
+        <button type="button" id="retriveData"> retrieve data </button>
+        <button type="button" id="removeData"> remove data </button>
+
+        <div id="getData">
+            
+        </div>
+        <script></script>
+    </div>
+</body>
+</html>

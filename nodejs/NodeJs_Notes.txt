@@ -1,0 +1,28 @@
+- What is NodeJS??
+    - the NodeJS is an Open Source Server Side Programming Language
+
+- NodeJS Env., Setup 
+- display the value / data at console
+    - console.log(), console.warn(), console.error()
+
+*******************************************
+- display the data / value at web
+    1. import the required modules
+    2. create a server
+    3. make a request and respond
+
+- __dirname and __filename
+
+- Buffer
+    - Buffer.alloc()
+
+- Timers
+    - setTimeout()
+    - setInterval()
+    - setImmediate()
+
+- OS module
+- User Defined Errors
+
+*******************************************
+- DNS Module

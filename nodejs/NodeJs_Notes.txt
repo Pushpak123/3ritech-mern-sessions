@@ -65,3 +65,6 @@ in Files:
 - Path Module
 - String Decoder
 
+*******************************************
+
+- query String

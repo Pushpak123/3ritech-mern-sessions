@@ -1,0 +1,10 @@
+-> What is ExpressJS?
+    - An ExpressJS is a Web Application Framework for NodeJS
+    - It provides the various features that make Web Application Development Fast
+    - ExpressJS is based on the NodeJS Middleware Module called 'Connect' which in turn uses the 'http' Module.
+
+    ExpressJS -> connect -> http -> NodeJS
+
+-> Features of ExpressJS
+-> Comparison the ExpressJS with NodeJS
+-> Getting Started with ExpressJS 

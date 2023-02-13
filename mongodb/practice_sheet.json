@@ -1,0 +1,210 @@
+1. creating the database
+2. creating the collection inside the database
+3. inserting the records into the created collection
+	3.1. insertOne
+	3.1. insertOne
+
+db.posts.insertOne({
+	title: "Post Title 1", 
+	body: "Body of Post.", 
+	category: "News", 
+	likes: 1, 
+	tags: ["news", "events"], 
+	date: Date()
+});
+
+
+db.posts.insertMany([
+{
+	title: "Post Title 2", 
+	body: "Body of Post.", 
+	category: "News", 
+	likes: 1, 
+	tags: ["news", "events"], 
+	date: Date()
+}, 
+{
+	title: "Post Title 3", 
+	body: "Body of Post.", 
+	category: "News", 
+	likes: 1, 
+	tags: ["news", "events"], 
+	date: Date()
+}, 
+{
+	title: "Post Title 4", 
+	body: "Body of Post.", 
+	category: "News", 
+	likes: 1, 
+	tags: ["news", "events"], 
+	date: Date()
+}
+]);
+
+db.posts.insertMany([
+{
+	title: "Post Title 5", 
+	body: "Body of Post.", 
+	category: "News", 
+	likes: 1, 
+	tags: ["news", "events"], 
+	date: Date()
+}, 
+{
+	title: "Post Title 6", 
+	body: "Body of Post.", 
+	category: "News", 
+	likes: 1, 
+	tags: ["news", "events"], 
+	date: Date()
+}, 
+{
+	title: "Post Title 7", 
+	body: "Body of Post.", 
+	category: "News", 
+	likes: 1, 
+	tags: ["news", "events"], 
+	date: Date()
+}
+]);
+
+4. finding the records
+	4.1. findOne()
+	4.2. find()
+	
+5. querying the records
+	5.1. find({category: "News", likes: 0})
+	
+6. projection
+	6.1. db.posts.find({}, {title: 1, date: 1});
+	6.2. db.posts.find({}, {_id: 0, title: 1, date: 1});
+	6.3. db.posts.find({}, {_id: 0, title: 1, category: 1, likes: 1, tags: 1, body: 1})
+	
+7. update
+	7.1 updateOne()
+		db.posts.find({title: "Post Title 1"});
+		db.posts.updateOne({title: "Post Title 1"}, {$set: {likes: 2}});
+		db.posts.updateOne(
+			{title: "Post Title 5"}, 
+			{
+				$set: {
+					title: "Post Title 5", 
+					body: "Body of post.", 
+					category: "Event", 
+					likes: 5, 
+					tags: ["news", "events"], 
+					date: Date()
+				}
+			}
+		);
+		
+	7.2. updateMany()
+		db.posts.updateMany({}, {$inc: {likes: 1}});
+		
+8. delete
+	6.1. deleteOne()
+		db.posts.deleteOne({title: "Post Title 5"});
+	6.2. deleteMany()
+		db.posts.deleteMany({category: "Technology"});
+		
+9. query operators
+	comparison: 
+		$eq 
+		$ne
+		$gt
+		$gte
+		$lt
+		$lte
+		$in
+		
+	logical: 
+		$and
+		$or
+		$nor
+		$not
+		
+	evaluation:
+		$regex
+		$text
+		$where
+		
+10. update operators:
+	fields: 
+		$currentDate
+		$inc
+		$rename
+		$set
+		$unset
+		
+	array: 
+		$addToSet
+		$pop
+		$pull
+		$push
+		
+		
+11. aggregation pipelines
+	aggregation operations allow you to group, sort, peform calculations, analyze data, 
+	aggregation pipelines can have one or more "stages". the order of these stages are important. each stage acts upon the results of the previous stage
+	
+	db.posts.aggregate([
+		// stage1: only find documents that have more than 1 likes
+		{
+			$match: {
+				likes: {
+					$gt: 1
+				}
+			}
+		}, 
+		// stage2: group documents by category and sum each category likes
+		{
+			$group: {
+				_id: "$category", 
+				totalLikes: {
+					$sum: "$likes"
+				}
+			}
+		}
+	]);
+	
+	
+	db.posts.aggregate(
+		[
+			{
+				$group: {
+					_id: "category"
+				}
+			}
+		]
+	);
+	
+	db.posts.aggregate(
+		[
+			{
+				$group: {
+					_id: "category"
+				}
+			}
+		]
+	);
+	
+	db.studentscol.aggregate(
+		[
+			{
+				$limit: 1
+			}
+		]
+	);
+	
+	db.restaurantscol.aggregate(
+		{
+			$project: {
+				"name": 1, 
+				"cuisine": 1, 
+				"address": 1
+			}
+		}, 
+		{
+			$limit: 3
+		}
+	);
